@@ -51,7 +51,7 @@ def list_mangler(list_in):
 ### description:
 
 First, we sort the list from lower to higher, then drop the lower scores, and then put the new result into our list.
-Next, we can calculate the average scores of the rest of the list and compare the scores with the letter grade.
+Next, we can calculate the average scores of the rest of the list using mean function and compare the scores with the letter grade.
 
 ### code:
 ```python
