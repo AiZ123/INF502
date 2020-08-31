@@ -2,14 +2,14 @@
 ### 1. Write a function with the following signature: `pythagoreanTheorem(length_a, length_b)`
 
 ### code:
-```
+```python
 import math
 def pythagoreanTheorem(length_a, length_b):
     length = math.hypot(length_a,length_b)
     return length
 ```
 ### result:
-```
+```python
 > pythagoreanTheorem(2, 2)
 2.8284271247461903
 > pythagoreanTheorem(3, 4)
@@ -25,7 +25,7 @@ def pythagoreanTheorem(length_a, length_b):
 First, we generate a new list, and then determine whether the number is even or not, and put the new result into the new list.
 
 ### code:
-```
+```python
 def list_mangler(list_in):
     list_out=[]
     
@@ -37,7 +37,7 @@ def list_mangler(list_in):
     return list_out
 ```
 ### result:
-```
+```python
 > list_mangler([1, 2, 3, 4])
 [3, 4, 9, 8]
 > list_mangler([4, 6, 9, 12])
@@ -54,7 +54,7 @@ First, we sort the list from lower to higher, then drop the lower scores, and th
 Next, we can calculate the average scores of the rest of the list and compare the scores with the letter grade.
 
 ### code:
-```
+```python
 from numpy import *
 def grade_calc(grades_in, to_drop):
     grades_in.sort()
@@ -74,7 +74,7 @@ def grade_calc(grades_in, to_drop):
     return letter_grade
 ```
 ### result:
-```
+```python
 > grade_calc([100, 90, 80, 95], 2)
 'A'
 > grade_calc([80, 90, 85, 75, 87, 88], 3)
@@ -91,7 +91,7 @@ First, we generate an empty list to store two arrays: even and odd numbers. Then
 If it is true, we can put the even number in the first sublist. Otherwise it is an odd number, and put it into the second sublist.
 
 ### code:
-```
+```python
 def odd_even_filter(numbers):
     odd_numbers=[]
     even_numbers=[]
@@ -105,7 +105,7 @@ def odd_even_filter(numbers):
     return out
 ```  
 ### result:
-```
+```python
 > odd_even_filter([1, 2, 3, 4, 5, 6, 7, 8, 9])
 [[2, 4, 6, 8], [1, 3, 5, 7, 9]]
 > odd_even_filter([98, 82, 56, 7, 77, 6, 333])
