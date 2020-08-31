@@ -1,25 +1,25 @@
+# Assignment 1: Python Basics
 1. Write a function with the following signature: pythagoreanTheorem(length_a, length_b)
-
-code:
-
+**1. Write a function with the following signature:** `pythagoreanTheorem(length_a, length_b)`
+### code:
+‘’‘ python
 import math
 
 def pythagoreanTheorem(length_a, length_b):
 
     length = math.hypot(length_a,length_b)
     return length
+’‘’
   
-result:
-
+### result:
+''' 
 > pythagoreanTheorem(2, 2)
 2.8284271247461903
-
 > pythagoreanTheorem(3, 4)
 5.0
-
 > pythagoreanTheorem(5, 12)
 13.0
-
+'''
 
 
 
@@ -109,7 +109,7 @@ If it is true, we can put the even number in the first sublist. Otherwise it is 
 
 
 code:
-
+‘’‘
 def odd_even_filter(numbers):
 
     odd_numbers=[]
@@ -123,9 +123,9 @@ def odd_even_filter(numbers):
           odd_numbers.append(x)
 
     return out
-    
+’‘’    
 result:
-
+‘’‘
 > odd_even_filter([1, 2, 3, 4, 5, 6, 7, 8, 9])
 [[2, 4, 6, 8], [1, 3, 5, 7, 9]]
 
@@ -134,3 +134,4 @@ result:
 
 > odd_even_filter([3, 9, 43, 7])
 [[], [3, 9, 43, 7]]
+’‘’
