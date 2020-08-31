@@ -1,25 +1,24 @@
 # Assignment 1: Python Basics
-1. Write a function with the following signature: pythagoreanTheorem(length_a, length_b)
 **1. Write a function with the following signature:** `pythagoreanTheorem(length_a, length_b)`
+
 ### code:
-‘’‘ python
+```
 import math
 
 def pythagoreanTheorem(length_a, length_b):
 
     length = math.hypot(length_a,length_b)
     return length
-’‘’
-  
+```
 ### result:
-''' 
+```
 > pythagoreanTheorem(2, 2)
 2.8284271247461903
 > pythagoreanTheorem(3, 4)
 5.0
 > pythagoreanTheorem(5, 12)
 13.0
-'''
+```
 
 
 
