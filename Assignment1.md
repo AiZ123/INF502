@@ -3,16 +3,20 @@
 code:
 
 import math
+
 def pythagoreanTheorem(length_a, length_b):
-  length = math.hypot(length_a,length_b)
-  return length
+
+    length = math.hypot(length_a,length_b)
+    return length
   
 result:
 
 > pythagoreanTheorem(2, 2)
 2.8284271247461903
+
 > pythagoreanTheorem(3, 4)
 5.0
+
 > pythagoreanTheorem(5, 12)
 13.0
 
@@ -28,6 +32,7 @@ First, we generate a new list, and then determine whether the number is even or 
 code:
 
 def list_mangler(list_in):
+
     list_out=[]
     for x in list_in:
        if (x%2 == 0):
@@ -40,8 +45,10 @@ result:
 
 > list_mangler([1, 2, 3, 4])
 [3, 4, 9, 8]
+
 > list_mangler([4, 6, 9, 12])
 [8, 12, 27, 24]
+
 > list_mangler([31, 22, 11, 9])
 [93, 44, 33, 27]
 
@@ -58,7 +65,9 @@ Next, we can calculate the average scores of the rest of the list and compare th
 code:
 
 from numpy import *
+
 def grade_calc(grades_in, to_drop):
+
     grades_in.sort()
     grades_in = grades_in[to_drop:]
     grades = mean(grades_in)
@@ -81,8 +90,10 @@ result:
 
 > grade_calc([100, 90, 80, 95], 2)
 'A'
+
 > grade_calc([80, 90, 85, 75, 87, 88], 3)
 'B'
+
 > grade_calc([75, 85, 65, 87, 58], 1)
 'C'
 
