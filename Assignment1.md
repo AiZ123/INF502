@@ -27,8 +27,8 @@ First, we generate a new list, and then determine whether the number is even or 
 ### code:
 ```
 def list_mangler(list_in):
-
     list_out=[]
+    
     for x in list_in:
        if (x%2 == 0):
           list_out.append(x*2)
