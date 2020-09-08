@@ -153,13 +153,13 @@ No files copied
 Auto-merging B.py
 CONFLICT (content): Merge conflict in B.py
 Automatic merge failed; fix conflicts and then commit the result.
-
 ```
+At first, there is no enough space in B.py, so we need to empty it to solve the conflict.
 
 12. Write a command (or set of commands) to proceed with the merge and make `master` branch up-to-date
 ```
 > git checkout master
-> git merge handson
+> git merge math
 > git rebase
 
 ```
