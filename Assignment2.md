@@ -5,7 +5,7 @@
 - Use `git log --decorate` to explore the structure of commits.
 
 ```
-cd ./handson
+> cd ./handson
 ```
 ```
 > git branch
@@ -97,8 +97,8 @@ Above is the detailed differences between the two branches, more generally, ther
 4. Write a command sequence to merge the non-master branch into `master`
 
 ```
-git checkout master
-git merge handson
+> git checkout master
+> git merge handson
 
 ```
 
@@ -107,9 +107,9 @@ git merge handson
 and (ii) change to this branch
 
 ```
-git checkout master
-git branch math
-git checkout math
+> git checkout master
+> git branch math
+> git checkout math
 
 ```
 
@@ -122,33 +122,34 @@ print 2+2
 
 7. Write a command (or sequence) to commit your changes
 ```
-git add B.py
-git commit -m "add two lines in B.py on math branch"
+> git add B.py
+> git commit -m "add two lines in B.py on math branch"
 ```
 
 8. Change back to the `master` branch and change B.py adding the following source code (commit your change to `master`):
 ```
 edit
-print 'hello world!'
-git checkout master
-git add B.py
-git commit -m "add one lines in B.py on master branch"
+> print 'hello world!'
+> git checkout master
+> git add B.py
+> git commit -m "add one lines in B.py on master branch"
 ```
 
 9. Write a command sequence to merge the `math` branch into `master` and describe what happened
 ```
-git checkout master
-git merge math
+> git checkout master
+> git merge math
 ```
 
 10. Write a set of commands to abort the merge
 ```
-git merge --abort
+> git merge --abort
 ```
 
 11.	Now repeat item 9, but proceed with the manual merge (Editing B.py). All implemented functions are needed. Explain your procedure
 ```
 No files copied
+
 Auto-merging B.py
 CONFLICT (content): Merge conflict in B.py
 Automatic merge failed; fix conflicts and then commit the result.
@@ -157,8 +158,8 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 12. Write a command (or set of commands) to proceed with the merge and make `master` branch up-to-date
 ```
-git checkout master
-git merge handson
-git rebase
+> git checkout master
+> git merge handson
+> git rebase
 
 ```
