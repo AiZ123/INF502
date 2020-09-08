@@ -163,3 +163,20 @@ Automatic merge failed; fix conflicts and then commit the result.
 > git rebase
 
 ```
+
+## comments:
+```
+Part 1.
+- Open git console in default working directory
+- Use `git branch` - `git checkout` - `git log --decorate` to see the current repo status
+- Use `git log --graph --all` to see historical changes
+- Create a branch using `git branch math`, but the math is already exit in the download file.
+- Use `git diff math master` to see differences between these two banches.
+- Back to master branch and use `git merge handson` to merge *math to *master.  
+- Add the lines on B.py. Use `git add B.py` and `git commit -m "Add two lines in B.py on handson branch" to comment.
+- Repeat the last step and add another line.
+- Use `git merge --abort` to abort the previous merge.
+- Use `git checkout master` - `git merge handson` - `git rebase` to get a up-to-date master branche.
+
+I'm not familiar with the code and the location, so it is a hard process at hte beginning. The biggest problem is merging branches and conflicts are following.
+```
